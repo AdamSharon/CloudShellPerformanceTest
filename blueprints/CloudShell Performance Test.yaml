@@ -1,0 +1,30 @@
+# CloudShell Pro team server, exceution server, portal, and a
+# MS SQL Server database deployed on EC2 instance
+#
+---
+spec_version: 1
+kind: blueprint
+
+metadata:
+  description: >
+    CloudShell Pro team server, exceution server, portal and MS SQL Server
+
+clouds:
+  - AWS: eu-west-1   ______take from Gal_______ oregon
+
+# These are the blueprint parameters and their default values.
+# The values can be changed when creating a sandbox based on this
+# blueprint.
+inputs:
+  - AWS_S3_PATH_TO_APP:
+  - AWS_S3_PATH_TO_DB:
+  - MACHINE_TYPE:
+
+# These are the applications that will be deployed in this blueprint
+applications:
+  - cloudshell:  # One instance of cloudshell (see: applications/cloudshell/cloudshell.yaml)
+    instances: 1
+      input_values:
+        - AWS_S3_PATH_TO_APP: $AWS_S3_PATH_TO_APP
+        - AWS_S3_PATH_TO_DB: $AWS_S3_PATH_TO_DB
+        - MACHINE_TYPE: $MACHINE_TYPE
