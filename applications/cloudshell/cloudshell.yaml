@@ -45,6 +45,11 @@ configuration:
   start:
     script: start.bat
 
+  # To validate the installation, we wait to see that
+  # the ports are available
+  healthcheck:
+    wait_for_ports: ALL
+    timeout: 180
 
 debugging:
   connection_protocol: SSH
