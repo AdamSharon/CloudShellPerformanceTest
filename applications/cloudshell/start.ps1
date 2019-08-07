@@ -1,5 +1,5 @@
 
 # install silently
-lazy @@qs-
-lazy @@ex-
-lazy @@po-
+# lazy @@qs-
+# lazy @@ex-
+# lazy @@po-
