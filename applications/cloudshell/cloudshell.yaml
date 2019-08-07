@@ -29,7 +29,7 @@ source:
     # AWS region
     ami:
       - id: ami-09380bd107b455fe7 # ______take from Gal_______ 
-        region: eu-west-1 #  ______take from Gal_______ oregon
+        region: us-west-2 #  ______take from Gal_______ oregon
         #username:  ______todo_______ 
 
 

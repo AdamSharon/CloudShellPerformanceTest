@@ -10,7 +10,7 @@ metadata:
     CloudShell Pro team server, exceution server, portal and MS SQL Server
 
 clouds:
-  - AWS: eu-west-1 #   ______take from Gal_______ oregon
+  - AWS: us-west-2 #   ______take from Gal_______ oregon
 
 # These are the blueprint parameters and their default values.
 # The values can be changed when creating a sandbox based on this
