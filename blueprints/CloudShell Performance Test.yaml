@@ -23,8 +23,8 @@ inputs:
 # These are the applications that will be deployed in this blueprint
 applications:
   - cloudshell:  # One instance of cloudshell (see: applications/cloudshell/cloudshell.yaml)
-    instances: 1
-      input_values:
-        - AWS_S3_PATH_TO_APP: $AWS_S3_PATH_TO_APP
-        - AWS_S3_PATH_TO_DB: $AWS_S3_PATH_TO_DB
-        - MACHINE_TYPE: $MACHINE_TYPE
+      instances: 1
+        input_values:
+          - AWS_S3_PATH_TO_APP: $AWS_S3_PATH_TO_APP
+          - AWS_S3_PATH_TO_DB: $AWS_S3_PATH_TO_DB
+          - MACHINE_TYPE: $MACHINE_TYPE
