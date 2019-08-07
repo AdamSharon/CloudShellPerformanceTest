@@ -43,7 +43,7 @@ configuration:
   # This script restarts cloudshell app after
   # the initialization completes
   start:
-    script: start.bat
+    script: start.ps1
 
   # To validate the installation, we wait to see that
   # the ports are available
