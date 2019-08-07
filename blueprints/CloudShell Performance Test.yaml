@@ -24,7 +24,7 @@ inputs:
 applications:
   - cloudshell:  # One instance of cloudshell (see: applications/cloudshell/cloudshell.yaml)
       instances: 1
-        input_values:
-          - AWS_S3_PATH_TO_APP: $AWS_S3_PATH_TO_APP
-          - AWS_S3_PATH_TO_DB: $AWS_S3_PATH_TO_DB
-          - MACHINE_TYPE: $MACHINE_TYPE
+          input_values:
+            - AWS_S3_PATH_TO_APP: $AWS_S3_PATH_TO_APP
+            - AWS_S3_PATH_TO_DB: $AWS_S3_PATH_TO_DB
+            - MACHINE_TYPE: $MACHINE_TYPE
