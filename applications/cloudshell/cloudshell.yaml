@@ -18,7 +18,7 @@ infrastructure:
   compute:
     spec:
       aws:
-        instance_type: $MACHINE_TYPE # e.g. "t2.medium" # see here https://aws.amazon.com/ec2/instance-types/ for T2 and T3
+        instance_type: t2.medium #$MACHINE_TYPE # e.g. "t2.medium" # see here https://aws.amazon.com/ec2/instance-types/ for T2 and T3
 
 
 source:
@@ -28,9 +28,9 @@ source:
     # be used to create a new EC2 instance in the defined
     # AWS region
     ami:
-      - id: ______take from Gal_______ 
-        region: eu-west-1   ______take from Gal_______ oregon
-        username:  ______todo_______ 
+      - id: ami-09380bd107b455fe7 # ______take from Gal_______ 
+        region: eu-west-1 #  ______take from Gal_______ oregon
+        #username:  ______todo_______ 
 
 
 configuration:
